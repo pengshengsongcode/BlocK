@@ -22,13 +22,12 @@
     
     if (self.didSelected) {
         
-        if (self.didSelected(@"彭盛凇")) {
-            
-            NSLog(@"%@", self.didSelected(@"111"));
+        NSString *str = self.didSelected(@"彭盛凇");
+        
+        if (str) {
+            NSLog(@"%@", str);
         }else {
-            
             NSLog(@"nil");
-            
         }
         
     }
